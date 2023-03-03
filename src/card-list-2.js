@@ -4,11 +4,20 @@ import { PetCard } from 'pet-card/src/pet-card.js';
 
 
 const infocard = new InfoCard();
-const infocard2 = new PetCard();
+const infocard2 = new InfoCard();
+const infocard3 = new InfoCard();
+const infocard4 = new InfoCard();
+const infocard5 = new InfoCard();
+const infocard6 = new PetCard();
+const infocard7 = new PetCard();
+const infocard8 = new PetCard();
+const infocard9 = new PetCard();
+const infocard10 = new PetCard();
+
 
 class CardList2 extends LitElement {
   static properties = {
-    header: { type: String },
+    header: { type: String }
   }
 
   static styles = css`
@@ -26,9 +35,17 @@ class CardList2 extends LitElement {
       <div style="width: 100%;overflow:auto;">
         <div style="float:left; width: 50%">
           ${infocard};
+          ${infocard2};
+          ${infocard3};
+          ${infocard4};
+          ${infocard5};
         </div>
         <div style="float:right;">
-          ${infocard2}
+          ${infocard6};
+          ${infocard7};
+          ${infocard8};
+          ${infocard9};
+          ${infocard10};
         </div>
       </div>
 
