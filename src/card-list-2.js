@@ -1,5 +1,9 @@
 import { LitElement, html, css} from 'lit';
-import { InfoCard } from 'info-card-2';
+import { InfoCard } from 'info-card-2/src/info-card.js';
+
+
+const infocard = new InfoCard();
+const infocard2 = new InfoCard();
 
 class CardList2 extends LitElement {
   static properties = {
@@ -7,20 +11,6 @@ class CardList2 extends LitElement {
   }
 
   static styles = css`
-    :host {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      font-size: calc(10px + 2vmin);
-      color: #1a2b42;
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
-      background-color: var(--card-list-2-background-color);
-    }
-
     
   `;
 
@@ -32,6 +22,15 @@ class CardList2 extends LitElement {
   render() {
     return html`
       <main>
+      <div style="width: 100%;overflow:auto;">
+        <div style="float:left; width: 50%">
+          ${infocard};
+        </div>
+        <div style="float:right;">
+          ${infocard2}
+        </div>
+      </div>
+
         
       </main>
 
