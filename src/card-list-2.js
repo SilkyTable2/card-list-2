@@ -1,9 +1,10 @@
 import { LitElement, html, css} from 'lit';
 import { InfoCard } from 'info-card-2/src/info-card.js';
+import { PetCard } from 'pet-card/src/pet-card.js';
 
 
 const infocard = new InfoCard();
-const infocard2 = new InfoCard();
+const infocard2 = new PetCard();
 
 class CardList2 extends LitElement {
   static properties = {
