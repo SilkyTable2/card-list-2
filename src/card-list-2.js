@@ -15,7 +15,7 @@ const infocard9 = new PetCard();
 const infocard10 = new PetCard();
 
 
-class CardList2 extends LitElement {
+export class CardList2 extends LitElement {
   static properties = {
     header: { type: String }
   }
