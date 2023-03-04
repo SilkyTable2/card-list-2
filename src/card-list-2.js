@@ -1,6 +1,6 @@
 import { LitElement, html, css} from 'lit';
 import { InfoCard } from 'info-card-2/src/info-card.js';
-import { PetCard } from 'pet-card/src/pet-card.js';
+// import { PetCard } from 'pet-card/src/pet-card.js';
 
 
 const infocard = new InfoCard();
@@ -8,11 +8,11 @@ const infocard2 = new InfoCard();
 const infocard3 = new InfoCard();
 const infocard4 = new InfoCard();
 const infocard5 = new InfoCard();
-const infocard6 = new PetCard();
-const infocard7 = new PetCard();
-const infocard8 = new PetCard();
-const infocard9 = new PetCard();
-const infocard10 = new PetCard();
+// const infocard6 = new PetCard();
+// const infocard7 = new PetCard();
+// const infocard8 = new PetCard();
+// const infocard9 = new PetCard();
+// const infocard10 = new PetCard();
 
 
 export class CardList2 extends LitElement {
@@ -41,11 +41,7 @@ export class CardList2 extends LitElement {
           ${infocard5};
         </div>
         <div style="float:right;">
-          ${infocard6};
-          ${infocard7};
-          ${infocard8};
-          ${infocard9};
-          ${infocard10};
+          
         </div>
       </div>
 
